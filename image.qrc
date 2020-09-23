@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>Begin_backg.jpg</file>
+        <file>work_backg.jpg</file>
+    </qresource>
+</RCC>
