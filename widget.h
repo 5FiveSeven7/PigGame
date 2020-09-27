@@ -3,8 +3,10 @@
 
 #include "touwenjian.h"
 
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
+QT_CHARTS_USE_NAMESPACE
 QT_END_NAMESPACE
 //创建猪的结构体
 struct Pig
@@ -21,6 +23,10 @@ struct Pig
     int days = 0;
     //是否有猪瘟
     bool flu = 0;
+    //第一天感染第二天才会表现出感染性
+    bool pre_flu = 0;
+
+
 };
 
 //创建一个猪圈的结构体
@@ -55,12 +61,18 @@ class Widget : public QWidget
 
     int now_time = 0;
 
-    //出售的价钱
-    float sum_sell = 0;
+    //现有的价钱
+    //添加购进小猪要花钱的功能，黑猪一只150，小花猪一只70，大花白猪一只60
+    float sum_sell = 60000.0 +28000.0 +24000.0;
 
     int mixflower_index = 0;
     int mixblack_index = 0;
+    //查询时当时所在猪圈
+    int ii;
 
+    Dialog *dialog;
+    QFile file;
+    QFile file1;
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
@@ -87,6 +99,13 @@ public:
     //查看具体猪圈跳转槽函数
     void jumping1(QString str);
 
+    //查询具体种类猪函数
+    void seeSpecies(int i);
+
+    //移除病猪函数
+    void moveflu(int i,int n);
+
+
 
 
 private:
@@ -97,5 +116,8 @@ protected:
     void keyPressEvent(QKeyEvent *event) override;
     void timerEvent(QTimerEvent *event) override;
 
+
+private slots:
+    void on_check_information_clicked();
 };
 #endif // WIDGET_H

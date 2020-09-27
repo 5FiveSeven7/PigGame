@@ -3,24 +3,29 @@
 
 #endif // TOUWENJIAN_H
 #include <QWidget>
-#include <QPainter>
-#include <QPaintEvent>
-#include <QPixmap>
 #include <QLineEdit>
 #include <QMouseEvent>
 #include <QKeyEvent>
 #include <QFile>
+#include <QFileDialog>
 #include <QLabel>
 #include <QPushButton>
 #include <QTimerEvent>
 #include <QMessageBox>
 #include <QDialog>
-#include <QDebug>
 #include <QIntValidator>
 #include <QTime>
 #include <cmath>
 #include <algorithm>
-#include <string>
 #include "mypushbotton.h"
 #include <QTextCursor>
 #include <QTextEdit>
+#include <QMediaPlayer>
+#include <QChart>
+#include <QSplineSeries>
+#include <QMediaPlaylist>
+#include "dialog.h"
+#include "ui_dialog.h"
+#include <QFileDevice>
+#include <QTextStream>
+#include <QTextCodec>

@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>728</width>
-    <height>568</height>
+    <width>940</width>
+    <height>792</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Widget</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout_6">
+  <layout class="QGridLayout" name="gridLayout_8">
    <item row="0" column="0">
     <widget class="QStackedWidget" name="stackedWidget">
      <widget class="QWidget" name="Begin">
@@ -83,38 +83,24 @@
            <widget class="QPushButton" name="Start">
             <property name="minimumSize">
              <size>
-              <width>0</width>
+              <width>150</width>
               <height>100</height>
              </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>华文新魏</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/button1.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
             </property>
             <property name="text">
              <string>开始新游戏</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <spacer name="horizontalSpacer_4">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>50</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QPushButton" name="continue_2">
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>100</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>继续游戏</string>
             </property>
            </widget>
           </item>
@@ -132,12 +118,62 @@
            </spacer>
           </item>
           <item>
+           <widget class="QPushButton" name="continue_begin">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>华文新魏</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/button1.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>继续游戏</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
            <widget class="QPushButton" name="Cancel">
             <property name="minimumSize">
              <size>
-              <width>0</width>
+              <width>150</width>
               <height>100</height>
              </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>华文新魏</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/button1.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
             </property>
             <property name="text">
              <string>结束</string>
@@ -163,100 +199,460 @@
       </layout>
      </widget>
      <widget class="QWidget" name="Work">
-      <layout class="QVBoxLayout" name="verticalLayout_8">
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_3">
-         <item>
-          <widget class="QWidget" name="widget_7" native="true">
-           <layout class="QVBoxLayout" name="verticalLayout_7">
-            <item>
-             <widget class="QPushButton" name="pigpen_SeeB">
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>100</height>
-               </size>
-              </property>
-              <property name="text">
-               <string>猪圈查询</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="species_SeeB">
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>100</height>
-               </size>
-              </property>
-              <property name="text">
-               <string>种类查询</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item>
-          <widget class="QWidget" name="widget_5" native="true">
-           <layout class="QGridLayout" name="gridLayout">
-            <item row="0" column="0">
-             <widget class="QLabel" name="label_7">
-              <property name="text">
-               <string>天数：</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="0" colspan="2">
-             <widget class="QPushButton" name="time_begin">
-              <property name="text">
-               <string>时间继续</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="2">
-             <widget class="QPushButton" name="time_pause">
-              <property name="text">
-               <string>时间暂停</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="0">
-             <widget class="QWidget" name="widget_6" native="true">
-              <layout class="QVBoxLayout" name="verticalLayout_5">
-               <item>
-                <widget class="QLabel" name="label_6">
-                 <property name="text">
-                  <string>猪圈占用情况：</string>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </widget>
-            </item>
-            <item row="2" column="1" colspan="2">
-             <widget class="QProgressBar" name="progressBar">
-              <property name="value">
-               <number>24</number>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1" colspan="2">
-             <widget class="QLCDNumber" name="time_display"/>
-            </item>
-           </layout>
-          </widget>
-         </item>
-        </layout>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="2" colspan="2">
+        <widget class="QWidget" name="widget_5" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <spacer name="horizontalSpacer_41">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>116</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>已过天数：</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLCDNumber" name="time_display">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <spacer name="horizontalSpacer_42">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>116</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="time_begin">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/dalishi.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>时间开始</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="time_pause">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/dalishi.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>时间停止</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <spacer name="horizontalSpacer_43">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>116</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>现存猪数</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLCDNumber" name="lcdNumber">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
        </item>
-       <item>
-        <widget class="QWidget" name="widget_8" native="true">
-         <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
           <item>
-           <widget class="QTextEdit" name="information_display">
-            <property name="readOnly">
+           <widget class="QLabel" name="label_17">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="image.qrc">:/image/u=1838310810,504427393&amp;fm=26&amp;gp=0.jpg</pixmap>
+            </property>
+            <property name="scaledContents">
              <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QTextEdit" name="information_display">
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>楷体</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="3">
+        <widget class="QWidget" name="widget_7" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_10">
+          <item row="1" column="0">
+           <widget class="QWidget" name="widget_6" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <widget class="QPushButton" name="pigpen_SeeB">
+               <property name="minimumSize">
+                <size>
+                 <width>221</width>
+                 <height>150</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>华文行楷</family>
+                 <pointsize>18</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-image: url(:/image/dalishi.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+               </property>
+               <property name="text">
+                <string>猪圈查询</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="flu_check">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>200</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>黑体</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/555.jpg);
+border:2px groove gray;
+border-radius:150px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>猪瘟检测</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QPushButton" name="flu_deal">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>200</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>黑体</family>
+              <pointsize>24</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/555.jpg);
+border-radius:150px;</string>
+            </property>
+            <property name="text">
+             <string>！隔离病猪！</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" rowspan="2">
+           <widget class="QWidget" name="widget_8" native="true">
+            <layout class="QGridLayout" name="gridLayout_9">
+             <item row="1" column="1">
+              <widget class="QPushButton" name="check_information">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>华文行楷</family>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-image: url(:/image/dalishi.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+               </property>
+               <property name="text">
+                <string>查询近五年购买与售出情况</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="species_SeeBig">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>华文行楷</family>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-image: url(:/image/dalishi.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+               </property>
+               <property name="text">
+                <string>大花白猪查询</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QPushButton" name="species_SeeLittle">
+               <property name="minimumSize">
+                <size>
+                 <width>122</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>华文行楷</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-image: url(:/image/dalishi.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+               </property>
+               <property name="text">
+                <string>小花猪查询</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="species_SeeBlack">
+               <property name="minimumSize">
+                <size>
+                 <width>122</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>华文行楷</family>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-image: url(:/image/dalishi.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+               </property>
+               <property name="text">
+                <string>黑猪查询</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <spacer name="verticalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="2" column="1">
+           <spacer name="verticalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="1">
+           <spacer name="verticalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="0">
+           <spacer name="verticalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QWidget" name="widget_20" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>0</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <widget class="QLabel" name="label_18">
+            <property name="font">
+             <font>
+              <family>华文中宋</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>目标：赚他两百万！</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="margin">
+             <number>0</number>
             </property>
            </widget>
           </item>
@@ -523,703 +919,1933 @@
        <item>
         <widget class="QWidget" name="widget_9" native="true">
          <layout class="QGridLayout" name="gridLayout_4">
-          <item row="0" column="0">
-           <widget class="Mypushbotton" name="pushButton_01">
+          <item row="15" column="2">
+           <widget class="Mypushbotton" name="pushButton_73">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
             <property name="text">
-             <string>1</string>
+             <string>73</string>
             </property>
            </widget>
           </item>
-          <item row="0" column="1">
+          <item row="15" column="3">
+           <widget class="Mypushbotton" name="pushButton_74">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>74</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="2">
+           <widget class="Mypushbotton" name="pushButton_53">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>53</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="3">
+           <widget class="Mypushbotton" name="pushButton_24">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>24</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
            <widget class="Mypushbotton" name="pushButton_02">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
             <property name="text">
              <string>2</string>
             </property>
            </widget>
           </item>
-          <item row="0" column="2">
-           <widget class="Mypushbotton" name="pushButton_03">
-            <property name="text">
-             <string>3</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="3">
-           <widget class="Mypushbotton" name="pushButton_04">
-            <property name="text">
-             <string>4</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="4">
-           <widget class="Mypushbotton" name="pushButton_05">
-            <property name="text">
-             <string>5</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <widget class="Mypushbotton" name="pushButton_06">
-            <property name="text">
-             <string>6</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="1">
-           <widget class="Mypushbotton" name="pushButton_07">
-            <property name="text">
-             <string>7</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="2">
-           <widget class="Mypushbotton" name="pushButton_08">
-            <property name="text">
-             <string>8</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="3">
-           <widget class="Mypushbotton" name="pushButton_09">
-            <property name="text">
-             <string>9</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="4">
-           <widget class="Mypushbotton" name="pushButton_10">
-            <property name="text">
-             <string>10</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="Mypushbotton" name="pushButton_11">
-            <property name="text">
-             <string>11</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1">
-           <widget class="Mypushbotton" name="pushButton_12">
-            <property name="text">
-             <string>12</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="2">
-           <widget class="Mypushbotton" name="pushButton_13">
-            <property name="text">
-             <string>13</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="3">
-           <widget class="Mypushbotton" name="pushButton_14">
-            <property name="text">
-             <string>14</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="4">
-           <widget class="Mypushbotton" name="pushButton_15">
-            <property name="text">
-             <string>15</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="0">
-           <widget class="Mypushbotton" name="pushButton_16">
-            <property name="text">
-             <string>16</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="1">
-           <widget class="Mypushbotton" name="pushButton_17">
-            <property name="text">
-             <string>17</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="2">
+          <item row="4" column="2">
            <widget class="Mypushbotton" name="pushButton_18">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
             <property name="text">
              <string>18</string>
             </property>
            </widget>
           </item>
           <item row="3" column="3">
-           <widget class="Mypushbotton" name="pushButton_19">
+           <widget class="Mypushbotton" name="pushButton_14">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
             <property name="text">
-             <string>19</string>
+             <string>14</string>
             </property>
            </widget>
           </item>
-          <item row="3" column="4">
-           <widget class="Mypushbotton" name="pushButton_20">
-            <property name="text">
-             <string>20</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="0">
-           <widget class="Mypushbotton" name="pushButton_21">
-            <property name="text">
-             <string>21</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="1">
-           <widget class="Mypushbotton" name="pushButton_22">
-            <property name="text">
-             <string>22</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="2">
-           <widget class="Mypushbotton" name="pushButton_23">
-            <property name="text">
-             <string>23</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="3">
-           <widget class="Mypushbotton" name="pushButton_24">
-            <property name="text">
-             <string>24</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="4">
-           <widget class="Mypushbotton" name="pushButton_25">
-            <property name="text">
-             <string>25</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="0">
-           <widget class="Mypushbotton" name="pushButton_26">
-            <property name="text">
-             <string>26</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="1">
-           <widget class="Mypushbotton" name="pushButton_27">
-            <property name="text">
-             <string>27</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="2">
-           <widget class="Mypushbotton" name="pushButton_28">
-            <property name="text">
-             <string>28</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="3">
-           <widget class="Mypushbotton" name="pushButton_29">
-            <property name="text">
-             <string>29</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="4">
-           <widget class="Mypushbotton" name="pushButton_30">
-            <property name="text">
-             <string>30</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="0">
-           <widget class="Mypushbotton" name="pushButton_31">
-            <property name="text">
-             <string>31</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="1">
-           <widget class="Mypushbotton" name="pushButton_32">
-            <property name="text">
-             <string>32</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="2">
-           <widget class="Mypushbotton" name="pushButton_33">
-            <property name="text">
-             <string>33</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="3">
-           <widget class="Mypushbotton" name="pushButton_34">
-            <property name="text">
-             <string>34</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="4">
-           <widget class="Mypushbotton" name="pushButton_35">
-            <property name="text">
-             <string>35</string>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="0">
-           <widget class="Mypushbotton" name="pushButton_36">
-            <property name="text">
-             <string>36</string>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="1">
-           <widget class="Mypushbotton" name="pushButton_37">
-            <property name="text">
-             <string>37</string>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="2">
-           <widget class="Mypushbotton" name="pushButton_38">
-            <property name="text">
-             <string>38</string>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="3">
-           <widget class="Mypushbotton" name="pushButton_39">
-            <property name="text">
-             <string>39</string>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="4">
-           <widget class="Mypushbotton" name="pushButton_40">
-            <property name="text">
-             <string>40</string>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="0">
-           <widget class="Mypushbotton" name="pushButton_41">
-            <property name="text">
-             <string>41</string>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="1">
-           <widget class="Mypushbotton" name="pushButton_42">
-            <property name="text">
-             <string>42</string>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="2">
-           <widget class="Mypushbotton" name="pushButton_43">
-            <property name="text">
-             <string>43</string>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="3">
-           <widget class="Mypushbotton" name="pushButton_44">
-            <property name="text">
-             <string>44</string>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="4">
-           <widget class="Mypushbotton" name="pushButton_45">
-            <property name="text">
-             <string>45</string>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="0">
-           <widget class="Mypushbotton" name="pushButton_46">
-            <property name="text">
-             <string>46</string>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="1">
-           <widget class="Mypushbotton" name="pushButton_47">
-            <property name="text">
-             <string>47</string>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="2">
-           <widget class="Mypushbotton" name="pushButton_48">
-            <property name="text">
-             <string>48</string>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="3">
-           <widget class="Mypushbotton" name="pushButton_49">
-            <property name="text">
-             <string>49</string>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="4">
-           <widget class="Mypushbotton" name="pushButton_50">
-            <property name="text">
-             <string>50</string>
-            </property>
-           </widget>
-          </item>
-          <item row="10" column="0">
-           <widget class="Mypushbotton" name="pushButton_51">
-            <property name="text">
-             <string>51</string>
-            </property>
-           </widget>
-          </item>
-          <item row="10" column="1">
-           <widget class="Mypushbotton" name="pushButton_52">
-            <property name="text">
-             <string>52</string>
-            </property>
-           </widget>
-          </item>
-          <item row="10" column="2">
-           <widget class="Mypushbotton" name="pushButton_53">
-            <property name="text">
-             <string>53</string>
-            </property>
-           </widget>
-          </item>
-          <item row="10" column="3">
+          <item row="11" column="3">
            <widget class="Mypushbotton" name="pushButton_54">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
             <property name="text">
              <string>54</string>
             </property>
            </widget>
           </item>
-          <item row="10" column="4">
-           <widget class="Mypushbotton" name="pushButton_55">
+          <item row="1" column="2">
+           <widget class="Mypushbotton" name="pushButton_03">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
             <property name="text">
-             <string>55</string>
+             <string>3</string>
             </property>
            </widget>
           </item>
-          <item row="11" column="0">
-           <widget class="Mypushbotton" name="pushButton_56">
+          <item row="14" column="3">
+           <widget class="Mypushbotton" name="pushButton_69">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
             <property name="text">
-             <string>56</string>
+             <string>69</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="Mypushbotton" name="pushButton_27">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>27</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="Mypushbotton" name="pushButton_04">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>4</string>
+            </property>
+           </widget>
+          </item>
+          <item row="18" column="4">
+           <widget class="Mypushbotton" name="pushButton_90">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>90</string>
+            </property>
+           </widget>
+          </item>
+          <item row="19" column="4">
+           <widget class="Mypushbotton" name="pushButton_95">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>95</string>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="4">
+           <widget class="Mypushbotton" name="pushButton_60">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>60</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="2">
+           <widget class="Mypushbotton" name="pushButton_43">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>43</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="4">
+           <widget class="Mypushbotton" name="pushButton_30">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>30</string>
+            </property>
+           </widget>
+          </item>
+          <item row="19" column="0">
+           <widget class="Mypushbotton" name="pushButton_91">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>91</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="0">
+           <widget class="Mypushbotton" name="pushButton_36">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>36</string>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="4">
+           <widget class="Mypushbotton" name="pushButton_75">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>75</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="Mypushbotton" name="pushButton_17">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>17</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="2">
+           <widget class="Mypushbotton" name="pushButton_33">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>33</string>
+            </property>
+           </widget>
+          </item>
+          <item row="18" column="0">
+           <widget class="Mypushbotton" name="pushButton_86">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>86</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="Mypushbotton" name="pushButton_07">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>7</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="2">
+           <widget class="Mypushbotton" name="pushButton_28">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>28</string>
             </property>
            </widget>
           </item>
           <item row="11" column="1">
-           <widget class="Mypushbotton" name="pushButton_57">
+           <widget class="Mypushbotton" name="pushButton_52">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
             <property name="text">
-             <string>57</string>
+             <string>52</string>
             </property>
            </widget>
           </item>
-          <item row="11" column="2">
-           <widget class="Mypushbotton" name="pushButton_58">
+          <item row="20" column="2">
+           <widget class="Mypushbotton" name="pushButton_98">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
             <property name="text">
-             <string>58</string>
+             <string>98</string>
             </property>
            </widget>
           </item>
-          <item row="11" column="3">
+          <item row="20" column="1">
+           <widget class="Mypushbotton" name="pushButton_97">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>97</string>
+            </property>
+           </widget>
+          </item>
+          <item row="17" column="1">
+           <widget class="Mypushbotton" name="pushButton_82">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>82</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="0">
+           <widget class="Mypushbotton" name="pushButton_41">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>41</string>
+            </property>
+           </widget>
+          </item>
+          <item row="13" column="2">
+           <widget class="Mypushbotton" name="pushButton_63">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>63</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="3">
+           <widget class="Mypushbotton" name="pushButton_39">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>39</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="4">
+           <widget class="Mypushbotton" name="pushButton_20">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>20</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="Mypushbotton" name="pushButton_08">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>8</string>
+            </property>
+           </widget>
+          </item>
+          <item row="19" column="3">
+           <widget class="Mypushbotton" name="pushButton_94">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>94</string>
+            </property>
+           </widget>
+          </item>
+          <item row="20" column="4">
+           <widget class="Mypushbotton" name="pushButton_100">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>100</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="Mypushbotton" name="pushButton_06">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>6</string>
+            </property>
+           </widget>
+          </item>
+          <item row="19" column="2">
+           <widget class="Mypushbotton" name="pushButton_93">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>93</string>
+            </property>
+           </widget>
+          </item>
+          <item row="16" column="1">
+           <widget class="Mypushbotton" name="pushButton_77">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>77</string>
+            </property>
+           </widget>
+          </item>
+          <item row="13" column="1">
+           <widget class="Mypushbotton" name="pushButton_62">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>62</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="Mypushbotton" name="pushButton_11">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>11</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="4">
+           <widget class="Mypushbotton" name="pushButton_15">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>15</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="4">
+           <widget class="Mypushbotton" name="pushButton_25">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>25</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="4">
+           <widget class="Mypushbotton" name="pushButton_35">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>35</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="1">
+           <widget class="Mypushbotton" name="pushButton_47">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>47</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="Mypushbotton" name="pushButton_13">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>13</string>
+            </property>
+           </widget>
+          </item>
+          <item row="16" column="0">
+           <widget class="Mypushbotton" name="pushButton_76">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>76</string>
+            </property>
+           </widget>
+          </item>
+          <item row="18" column="2">
+           <widget class="Mypushbotton" name="pushButton_88">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>88</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="3">
+           <widget class="Mypushbotton" name="pushButton_49">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>49</string>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="3">
            <widget class="Mypushbotton" name="pushButton_59">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
             <property name="text">
              <string>59</string>
             </property>
            </widget>
           </item>
           <item row="11" column="4">
-           <widget class="Mypushbotton" name="pushButton_60">
+           <widget class="Mypushbotton" name="pushButton_55">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
             <property name="text">
-             <string>60</string>
+             <string>55</string>
             </property>
            </widget>
           </item>
-          <item row="12" column="0">
-           <widget class="Mypushbotton" name="pushButton_61">
-            <property name="text">
-             <string>61</string>
-            </property>
-           </widget>
-          </item>
-          <item row="12" column="1">
-           <widget class="Mypushbotton" name="pushButton_62">
-            <property name="text">
-             <string>62</string>
-            </property>
-           </widget>
-          </item>
-          <item row="12" column="2">
-           <widget class="Mypushbotton" name="pushButton_63">
-            <property name="text">
-             <string>63</string>
-            </property>
-           </widget>
-          </item>
-          <item row="12" column="3">
-           <widget class="Mypushbotton" name="pushButton_64">
-            <property name="text">
-             <string>64</string>
-            </property>
-           </widget>
-          </item>
-          <item row="12" column="4">
-           <widget class="Mypushbotton" name="pushButton_65">
-            <property name="text">
-             <string>65</string>
-            </property>
-           </widget>
-          </item>
-          <item row="13" column="0">
-           <widget class="Mypushbotton" name="pushButton_66">
-            <property name="text">
-             <string>66</string>
-            </property>
-           </widget>
-          </item>
-          <item row="13" column="1">
-           <widget class="Mypushbotton" name="pushButton_67">
-            <property name="text">
-             <string>67</string>
-            </property>
-           </widget>
-          </item>
-          <item row="13" column="2">
-           <widget class="Mypushbotton" name="pushButton_68">
-            <property name="text">
-             <string>68</string>
-            </property>
-           </widget>
-          </item>
-          <item row="13" column="3">
-           <widget class="Mypushbotton" name="pushButton_69">
-            <property name="text">
-             <string>69</string>
-            </property>
-           </widget>
-          </item>
-          <item row="13" column="4">
-           <widget class="Mypushbotton" name="pushButton_70">
-            <property name="text">
-             <string>70</string>
-            </property>
-           </widget>
-          </item>
-          <item row="14" column="0">
-           <widget class="Mypushbotton" name="pushButton_71">
-            <property name="text">
-             <string>71</string>
-            </property>
-           </widget>
-          </item>
-          <item row="14" column="1">
-           <widget class="Mypushbotton" name="pushButton_72">
-            <property name="text">
-             <string>72</string>
-            </property>
-           </widget>
-          </item>
-          <item row="14" column="2">
-           <widget class="Mypushbotton" name="pushButton_73">
-            <property name="text">
-             <string>73</string>
-            </property>
-           </widget>
-          </item>
-          <item row="14" column="3">
-           <widget class="Mypushbotton" name="pushButton_74">
-            <property name="text">
-             <string>74</string>
-            </property>
-           </widget>
-          </item>
-          <item row="14" column="4">
-           <widget class="Mypushbotton" name="pushButton_75">
-            <property name="text">
-             <string>75</string>
-            </property>
-           </widget>
-          </item>
-          <item row="15" column="0">
-           <widget class="Mypushbotton" name="pushButton_76">
-            <property name="text">
-             <string>76</string>
-            </property>
-           </widget>
-          </item>
-          <item row="15" column="1">
-           <widget class="Mypushbotton" name="pushButton_77">
-            <property name="text">
-             <string>77</string>
-            </property>
-           </widget>
-          </item>
-          <item row="15" column="2">
-           <widget class="Mypushbotton" name="pushButton_78">
-            <property name="text">
-             <string>78</string>
-            </property>
-           </widget>
-          </item>
-          <item row="15" column="3">
-           <widget class="Mypushbotton" name="pushButton_79">
-            <property name="text">
-             <string>79</string>
-            </property>
-           </widget>
-          </item>
-          <item row="15" column="4">
-           <widget class="Mypushbotton" name="pushButton_80">
-            <property name="text">
-             <string>80</string>
-            </property>
-           </widget>
-          </item>
-          <item row="16" column="0">
-           <widget class="Mypushbotton" name="pushButton_81">
-            <property name="text">
-             <string>81</string>
-            </property>
-           </widget>
-          </item>
-          <item row="16" column="1">
-           <widget class="Mypushbotton" name="pushButton_82">
-            <property name="text">
-             <string>82</string>
-            </property>
-           </widget>
-          </item>
-          <item row="16" column="2">
-           <widget class="Mypushbotton" name="pushButton_83">
-            <property name="text">
-             <string>83</string>
-            </property>
-           </widget>
-          </item>
-          <item row="16" column="3">
-           <widget class="Mypushbotton" name="pushButton_84">
-            <property name="text">
-             <string>84</string>
-            </property>
-           </widget>
-          </item>
-          <item row="16" column="4">
-           <widget class="Mypushbotton" name="pushButton_85">
-            <property name="text">
-             <string>85</string>
-            </property>
-           </widget>
-          </item>
-          <item row="17" column="0">
-           <widget class="Mypushbotton" name="pushButton_86">
-            <property name="text">
-             <string>86</string>
-            </property>
-           </widget>
-          </item>
-          <item row="17" column="1">
-           <widget class="Mypushbotton" name="pushButton_87">
-            <property name="text">
-             <string>87</string>
-            </property>
-           </widget>
-          </item>
-          <item row="17" column="2">
-           <widget class="Mypushbotton" name="pushButton_88">
-            <property name="text">
-             <string>88</string>
-            </property>
-           </widget>
-          </item>
-          <item row="17" column="3">
-           <widget class="Mypushbotton" name="pushButton_89">
-            <property name="text">
-             <string>89</string>
-            </property>
-           </widget>
-          </item>
-          <item row="17" column="4">
-           <widget class="Mypushbotton" name="pushButton_90">
-            <property name="text">
-             <string>90</string>
-            </property>
-           </widget>
-          </item>
-          <item row="18" column="0">
-           <widget class="Mypushbotton" name="pushButton_91">
-            <property name="text">
-             <string>91</string>
-            </property>
-           </widget>
-          </item>
-          <item row="18" column="1">
+          <item row="19" column="1">
            <widget class="Mypushbotton" name="pushButton_92">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
             <property name="text">
              <string>92</string>
             </property>
            </widget>
           </item>
-          <item row="18" column="2">
-           <widget class="Mypushbotton" name="pushButton_93">
+          <item row="10" column="2">
+           <widget class="Mypushbotton" name="pushButton_48">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
             <property name="text">
-             <string>93</string>
+             <string>48</string>
             </property>
            </widget>
           </item>
-          <item row="18" column="3">
-           <widget class="Mypushbotton" name="pushButton_94">
+          <item row="6" column="3">
+           <widget class="Mypushbotton" name="pushButton_29">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
             <property name="text">
-             <string>94</string>
+             <string>29</string>
             </property>
            </widget>
           </item>
-          <item row="18" column="4">
-           <widget class="Mypushbotton" name="pushButton_95">
+          <item row="11" column="0">
+           <widget class="Mypushbotton" name="pushButton_51">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
             <property name="text">
-             <string>95</string>
+             <string>51</string>
             </property>
            </widget>
           </item>
-          <item row="19" column="0">
-           <widget class="Mypushbotton" name="pushButton_96">
+          <item row="5" column="2">
+           <widget class="Mypushbotton" name="pushButton_23">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
             <property name="text">
-             <string>96</string>
+             <string>23</string>
             </property>
            </widget>
           </item>
-          <item row="19" column="1">
-           <widget class="Mypushbotton" name="pushButton_97">
+          <item row="14" column="4">
+           <widget class="Mypushbotton" name="pushButton_70">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
             <property name="text">
-             <string>97</string>
+             <string>70</string>
             </property>
            </widget>
           </item>
-          <item row="19" column="2">
-           <widget class="Mypushbotton" name="pushButton_98">
+          <item row="17" column="2">
+           <widget class="Mypushbotton" name="pushButton_83">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
             <property name="text">
-             <string>98</string>
+             <string>83</string>
             </property>
            </widget>
           </item>
-          <item row="19" column="3">
+          <item row="4" column="0">
+           <widget class="Mypushbotton" name="pushButton_16">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>16</string>
+            </property>
+           </widget>
+          </item>
+          <item row="13" column="3">
+           <widget class="Mypushbotton" name="pushButton_64">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>64</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="Mypushbotton" name="pushButton_01">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="16" column="4">
+           <widget class="Mypushbotton" name="pushButton_80">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>80</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="Mypushbotton" name="pushButton_21">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>21</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="2">
+           <widget class="Mypushbotton" name="pushButton_38">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>38</string>
+            </property>
+           </widget>
+          </item>
+          <item row="20" column="3">
            <widget class="Mypushbotton" name="pushButton_99">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
             <property name="text">
              <string>99</string>
             </property>
            </widget>
           </item>
-          <item row="19" column="4">
-           <widget class="Mypushbotton" name="pushButton_100">
+          <item row="13" column="4">
+           <widget class="Mypushbotton" name="pushButton_65">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
             <property name="text">
-             <string>100</string>
+             <string>65</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="4">
+           <widget class="Mypushbotton" name="pushButton_45">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>45</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="4">
+           <widget class="Mypushbotton" name="pushButton_10">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>10</string>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="0">
+           <widget class="Mypushbotton" name="pushButton_56">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>56</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="1">
+           <widget class="Mypushbotton" name="pushButton_37">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>37</string>
+            </property>
+           </widget>
+          </item>
+          <item row="18" column="3">
+           <widget class="Mypushbotton" name="pushButton_89">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>89</string>
+            </property>
+           </widget>
+          </item>
+          <item row="14" column="0">
+           <widget class="Mypushbotton" name="pushButton_66">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>66</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="Mypushbotton" name="pushButton_31">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>31</string>
+            </property>
+           </widget>
+          </item>
+          <item row="17" column="3">
+           <widget class="Mypushbotton" name="pushButton_84">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>84</string>
+            </property>
+           </widget>
+          </item>
+          <item row="13" column="0">
+           <widget class="Mypushbotton" name="pushButton_61">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>61</string>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="2">
+           <widget class="Mypushbotton" name="pushButton_58">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>58</string>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="1">
+           <widget class="Mypushbotton" name="pushButton_72">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>72</string>
+            </property>
+           </widget>
+          </item>
+          <item row="17" column="0">
+           <widget class="Mypushbotton" name="pushButton_81">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>81</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="Mypushbotton" name="pushButton_22">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>22</string>
+            </property>
+           </widget>
+          </item>
+          <item row="14" column="2">
+           <widget class="Mypushbotton" name="pushButton_68">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>68</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="Mypushbotton" name="pushButton_09">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>9</string>
+            </property>
+           </widget>
+          </item>
+          <item row="14" column="1">
+           <widget class="Mypushbotton" name="pushButton_67">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>67</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="Mypushbotton" name="pushButton_05">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>5</string>
+            </property>
+           </widget>
+          </item>
+          <item row="16" column="2">
+           <widget class="Mypushbotton" name="pushButton_78">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>78</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="3">
+           <widget class="Mypushbotton" name="pushButton_34">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>34</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="3">
+           <widget class="Mypushbotton" name="pushButton_44">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>44</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="0">
+           <widget class="Mypushbotton" name="pushButton_46">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>46</string>
+            </property>
+           </widget>
+          </item>
+          <item row="18" column="1">
+           <widget class="Mypushbotton" name="pushButton_87">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>87</string>
+            </property>
+           </widget>
+          </item>
+          <item row="17" column="4">
+           <widget class="Mypushbotton" name="pushButton_85">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>85</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="4">
+           <widget class="Mypushbotton" name="pushButton_40">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>40</string>
+            </property>
+           </widget>
+          </item>
+          <item row="20" column="0">
+           <widget class="Mypushbotton" name="pushButton_96">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>96</string>
+            </property>
+           </widget>
+          </item>
+          <item row="15" column="0">
+           <widget class="Mypushbotton" name="pushButton_71">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>71</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="Mypushbotton" name="pushButton_32">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>32</string>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="1">
+           <widget class="Mypushbotton" name="pushButton_57">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>57</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="4">
+           <widget class="Mypushbotton" name="pushButton_50">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>50</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="3">
+           <widget class="Mypushbotton" name="pushButton_19">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>19</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="1">
+           <widget class="Mypushbotton" name="pushButton_42">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>42</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="Mypushbotton" name="pushButton_12">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>12</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="Mypushbotton" name="pushButton_26">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>26</string>
+            </property>
+           </widget>
+          </item>
+          <item row="16" column="3">
+           <widget class="Mypushbotton" name="pushButton_79">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/image/zhujuanpb.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+            </property>
+            <property name="text">
+             <string>79</string>
             </property>
            </widget>
           </item>
@@ -1248,7 +2874,7 @@
               <property name="font">
                <font>
                 <family>华文行楷</family>
-                <pointsize>12</pointsize>
+                <pointsize>22</pointsize>
                </font>
               </property>
               <property name="text">
@@ -1264,6 +2890,12 @@
               <layout class="QHBoxLayout" name="horizontalLayout_4">
                <item>
                 <widget class="QLabel" name="label_15">
+                 <property name="font">
+                  <font>
+                   <family>Agency FB</family>
+                   <pointsize>18</pointsize>
+                  </font>
+                 </property>
                  <property name="text">
                   <string>当前天数：</string>
                  </property>
@@ -1315,6 +2947,24 @@
             </item>
             <item row="1" column="1">
              <widget class="QPushButton" name="see_reuturn">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>幼圆</family>
+                <pointsize>18</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border-image: url(:/image/katong.jpg);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;</string>
+              </property>
               <property name="text">
                <string>返回</string>
               </property>
@@ -1354,298 +3004,855 @@
       </layout>
      </widget>
      <widget class="QWidget" name="certain_see">
-      <widget class="QFrame" name="frame">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>20</y>
-         <width>231</width>
-         <height>532</height>
-        </rect>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>500</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_9">
-        <item>
-         <widget class="QWidget" name="widget_12" native="true">
-          <layout class="QHBoxLayout" name="horizontalLayout_6">
-           <item>
-            <spacer name="horizontalSpacer_20">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>40</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item>
-            <widget class="QLabel" name="label_9">
-             <property name="font">
-              <font>
-               <family>华文中宋</family>
-               <pointsize>11</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>具体参数</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <spacer name="horizontalSpacer_21">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>40</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-          </layout>
-         </widget>
-        </item>
-        <item>
-         <widget class="QWidget" name="widget_13" native="true">
-          <layout class="QHBoxLayout" name="horizontalLayout_7">
-           <item>
-            <spacer name="horizontalSpacer_22">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>19</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item>
-            <widget class="QLabel" name="label_10">
-             <property name="text">
-              <string>猪圈号：</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <spacer name="horizontalSpacer_23">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>20</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item>
-            <widget class="QLabel" name="pigpen_num">
-             <property name="text">
-              <string>TextLabel</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <spacer name="horizontalSpacer_24">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>19</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-          </layout>
-         </widget>
-        </item>
-        <item>
-         <widget class="QWidget" name="widget_14" native="true">
-          <layout class="QGridLayout" name="gridLayout_3">
-           <item row="0" column="0">
-            <widget class="QLabel" name="label_11">
-             <property name="text">
-              <string>黑猪数量：</string>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <spacer name="horizontalSpacer_25">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>30</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item row="0" column="2">
-            <widget class="QLCDNumber" name="LCD_BLACK"/>
-           </item>
-           <item row="1" column="0">
-            <widget class="QLabel" name="label_12">
-             <property name="text">
-              <string>小花猪数量：</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="1">
-            <spacer name="horizontalSpacer_26">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>30</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item row="1" column="2">
-            <widget class="QLCDNumber" name="LCD_LITTLE"/>
-           </item>
-           <item row="2" column="0">
-            <widget class="QLabel" name="label_13">
-             <property name="text">
-              <string>大花白猪数量：</string>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="1">
-            <spacer name="horizontalSpacer_27">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>30</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item row="2" column="2">
-            <widget class="QLCDNumber" name="LCD_BIG"/>
-           </item>
-           <item row="3" column="0">
-            <widget class="QLabel" name="label_14">
-             <property name="text">
-              <string>猪总数：</string>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="1">
-            <spacer name="horizontalSpacer_30">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>30</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item row="3" column="2">
-            <widget class="QLCDNumber" name="LCD_SUM"/>
-           </item>
-          </layout>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="widget_15" native="true">
-       <property name="geometry">
-        <rect>
-         <x>320</x>
-         <y>100</y>
-         <width>261</width>
-         <height>431</height>
-        </rect>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>500</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <layout class="QHBoxLayout" name="horizontalLayout_8">
-        <item>
-         <spacer name="horizontalSpacer_28">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>30</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item>
-         <widget class="QPushButton" name="certainSee_return">
-          <property name="text">
-           <string>返回</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <spacer name="horizontalSpacer_29">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>115</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-       </layout>
-      </widget>
+      <layout class="QHBoxLayout" name="horizontalLayout_9">
+       <item>
+        <spacer name="horizontalSpacer_44">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <item>
+           <spacer name="verticalSpacer_12">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_12" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <spacer name="horizontalSpacer_20">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_9">
+               <property name="font">
+                <font>
+                 <family>华文中宋</family>
+                 <pointsize>18</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>具体参数</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_21">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_13" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <item>
+              <spacer name="horizontalSpacer_22">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>19</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_10">
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>猪圈号：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_23">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="pigpen_num">
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>TextLabel</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_24">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>19</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_14" native="true">
+            <layout class="QGridLayout" name="gridLayout_3">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_11">
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>黑猪数量：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <spacer name="horizontalSpacer_25">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>30</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLCDNumber" name="LCD_BLACK"/>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_12">
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>小花猪数量：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <spacer name="horizontalSpacer_26">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>30</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLCDNumber" name="LCD_LITTLE"/>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_13">
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>大花白猪数量：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <spacer name="horizontalSpacer_27">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>30</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="2" column="2">
+              <widget class="QLCDNumber" name="LCD_BIG"/>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_14">
+               <property name="font">
+                <font>
+                 <family>Agency FB</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>猪总数：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <spacer name="horizontalSpacer_30">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>30</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="3" column="2">
+              <widget class="QLCDNumber" name="LCD_SUM"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_11">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_13">
+         <item>
+          <widget class="QWidget" name="widget_17" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout_12">
+            <item>
+             <widget class="QWidget" name="widget_19" native="true">
+              <layout class="QVBoxLayout" name="verticalLayout_11">
+               <item>
+                <spacer name="verticalSpacer_10">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QWidget" name="widget_15" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>500</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_8">
+                  <item>
+                   <spacer name="horizontalSpacer_28">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>95</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="certainSee_return">
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>100</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border:2px groove gray;
+border-image: url(:/image/katong.jpg);
+border-radius:10px;
+padding:2px 4px;</string>
+                    </property>
+                    <property name="text">
+                     <string>返回</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_29">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>94</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_16">
+                 <property name="font">
+                  <font>
+                   <family>华文隶书</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>下列按钮可以看见猪圈中具体猪的信息哦</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_18" native="true">
+              <layout class="QGridLayout" name="gridLayout_7">
+               <item row="4" column="3">
+                <widget class="QPushButton" name="seepig_10">
+                 <property name="minimumSize">
+                  <size>
+                   <width>150</width>
+                   <height>70</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>华文琥珀</family>
+                   <pointsize>26</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border:2px groove gray;
+border-image: url(:/image/Begin_dong1.jpg);
+border-radius:10px;
+padding:2px 4px;</string>
+                 </property>
+                 <property name="text">
+                  <string>10</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="3">
+                <widget class="QPushButton" name="seepig_4">
+                 <property name="minimumSize">
+                  <size>
+                   <width>150</width>
+                   <height>70</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>华文琥珀</family>
+                   <pointsize>26</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border:2px groove gray;
+border-image: url(:/image/Begin_dong1.jpg);
+border-radius:10px;
+padding:2px 4px;</string>
+                 </property>
+                 <property name="text">
+                  <string>4</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <spacer name="horizontalSpacer_32">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="4" column="0">
+                <spacer name="horizontalSpacer_35">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="0" column="0">
+                <spacer name="horizontalSpacer_31">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>50</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="2" column="0">
+                <spacer name="horizontalSpacer_33">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="2" column="3">
+                <widget class="QPushButton" name="seepig_6">
+                 <property name="minimumSize">
+                  <size>
+                   <width>150</width>
+                   <height>70</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>华文琥珀</family>
+                   <pointsize>26</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border:2px groove gray;
+border-image: url(:/image/Begin_dong1.jpg);
+border-radius:10px;
+padding:2px 4px;</string>
+                 </property>
+                 <property name="text">
+                  <string>6</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="3">
+                <widget class="QPushButton" name="seepig_8">
+                 <property name="minimumSize">
+                  <size>
+                   <width>150</width>
+                   <height>70</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>华文琥珀</family>
+                   <pointsize>26</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border:2px groove gray;
+border-image: url(:/image/Begin_dong1.jpg);
+border-radius:10px;
+padding:2px 4px;</string>
+                 </property>
+                 <property name="text">
+                  <string>8</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <spacer name="horizontalSpacer_34">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="0" column="3">
+                <widget class="QPushButton" name="seepig_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>150</width>
+                   <height>70</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>华文琥珀</family>
+                   <pointsize>26</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border:2px groove gray;
+border-image: url(:/image/Begin_dong1.jpg);
+border-radius:10px;
+padding:2px 4px;</string>
+                 </property>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QPushButton" name="seepig_5">
+                 <property name="minimumSize">
+                  <size>
+                   <width>150</width>
+                   <height>70</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>华文琥珀</family>
+                   <pointsize>26</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border:2px groove gray;
+border-image: url(:/image/Begin_dong1.jpg);
+border-radius:10px;
+padding:2px 4px;</string>
+                 </property>
+                 <property name="text">
+                  <string>5</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QPushButton" name="seepig_1">
+                 <property name="minimumSize">
+                  <size>
+                   <width>150</width>
+                   <height>70</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>华文琥珀</family>
+                   <pointsize>26</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border:2px groove gray;
+border-image: url(:/image/Begin_dong1.jpg);
+border-radius:10px;
+padding:2px 4px;</string>
+                 </property>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QPushButton" name="seepig_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>150</width>
+                   <height>70</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>华文琥珀</family>
+                   <pointsize>26</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border:2px groove gray;
+border-image: url(:/image/Begin_dong1.jpg);
+border-radius:10px;
+padding:2px 4px;</string>
+                 </property>
+                 <property name="text">
+                  <string>3</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QPushButton" name="seepig_7">
+                 <property name="minimumSize">
+                  <size>
+                   <width>150</width>
+                   <height>70</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>华文琥珀</family>
+                   <pointsize>26</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border:2px groove gray;
+border-image: url(:/image/Begin_dong1.jpg);
+border-radius:10px;
+padding:2px 4px;</string>
+                 </property>
+                 <property name="text">
+                  <string>7</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QPushButton" name="seepig_9">
+                 <property name="minimumSize">
+                  <size>
+                   <width>150</width>
+                   <height>70</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>华文琥珀</family>
+                   <pointsize>26</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border:2px groove gray;
+border-image: url(:/image/Begin_dong1.jpg);
+border-radius:10px;
+padding:2px 4px;</string>
+                 </property>
+                 <property name="text">
+                  <string>9</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="4">
+                <spacer name="horizontalSpacer_36">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>50</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="1" column="4">
+                <spacer name="horizontalSpacer_37">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="2" column="4">
+                <spacer name="horizontalSpacer_38">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="3" column="4">
+                <spacer name="horizontalSpacer_39">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="4" column="4">
+                <spacer name="horizontalSpacer_40">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_9">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_45">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="chart">
+      <layout class="QGridLayout" name="gridLayout_11">
+       <item row="0" column="0">
+        <widget class="QChartView" name="widget_days" native="true"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QChartView" name="widget_weight" native="true"/>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QWidget" name="widget_24" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="chart_return">
+            <property name="text">
+             <string>返回</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
    </item>
@@ -1657,7 +3864,15 @@
    <extends>QPushButton</extends>
    <header location="global">mypushbotton.h</header>
   </customwidget>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QWidget</extends>
+   <header location="global">qchartview.h</header>
+   <container>1</container>
+  </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -2,5 +2,18 @@
     <qresource prefix="/image">
         <file>Begin_backg.jpg</file>
         <file>work_backg.jpg</file>
+        <file>u=1838310810,504427393&amp;fm=26&amp;gp=0.jpg</file>
+        <file>backmusic.mp3</file>
+        <file>Buy and Sell.txt</file>
+        <file>Begin_dong1.jpg</file>
+        <file>ggh.jpg</file>
+        <file>button1.jpg</file>
+        <file>qian.jpg</file>
+        <file>dalishi.jpg</file>
+        <file>zhujuan.jpg</file>
+        <file>555.jpg</file>
+        <file>zhujuanpb.jpg</file>
+        <file>katong.jpg</file>
+        <file>kuiang.jpg</file>
     </qresource>
 </RCC>
